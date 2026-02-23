@@ -1,35 +1,120 @@
-# 🛡️ PolicyPal AI - Chrome Extension
+#LexiAI Chrome Extension ✨
 
-**PolicyPal AI** is a Chrome extension that instantly **summarizes privacy policies and terms of service** into short, readable insights — so you can understand what you’re agreeing to without endless scrolling.
+##LexiAI is an AI-powered Chrome extension that instantly summarizes and paraphrases selected text directly within your browser. Simply highlight text, right-click, and choose how you want LexiAI to transform it.
 
----
+##🚀 Features
+###📚 Smart Summarization
 
-## ✨ Features
+Detailed Summary
 
-- 🔍 **Automatic Page Detection**  
-  Detects privacy policy or terms of service pages as you browse.
+Bullet Points
 
-- ⚡ **One-Click Summarization**  
-  Summarize lengthy policies instantly with the **Analyze** button.
+TL;DR
 
-- 🧠 **AI-Powered Insights**  
-  Uses advanced language models to generate concise, human-readable summaries.
+Study Notes
 
-- 🎨 **Modern UI**  
-  Clean, minimal, and responsive popup interface built with **TailwindCSS**.
+Simplified Explanation
 
-- 🖥️ **Lightweight & Fast**  
-  Runs seamlessly in the background with minimal resource usage.
+###✍️ Intelligent Paraphrasing
 
----
+Standard
 
-## 🛠️ Tech Stack
+Shorten
 
-- **React + Vite** → Frontend framework for popup UI  
-- **Tailwind CSS** → Utility-first modern styling  
-- **Framer Motion** → Smooth animations and transitions  
-- **Lucide Icons** → Crisp and scalable UI icons  
-- **React Query (TanStack)** → Server state management & API requests  
-- **Chrome Extension Manifest V3** → Secure and modern extension API  
+Expand
 
----
+Academic
+
+Formal
+
+###💾 Local Save Support
+
+Users can save generated summaries and paraphrases locally using Chrome’s Storage API.
+
+###⚡ Context Menu Integration
+
+Select any text on a webpage → Right-click → Choose a LexiAI action → View results instantly.
+
+###🏗 Architecture Overview
+
+This extension communicates with a deployed backend via an API Gateway.
+
+User selects text
+        ↓
+Context Menu Click
+        ↓
+Background Service Worker
+        ↓
+API Gateway
+        ↓
+Summarization / Paraphrasing Service
+        ↓
+Response displayed via Content Script
+###🛠 Tech Stack
+
+TypeScript
+
+Chrome Extension (Manifest V3)
+
+Vite
+
+Chrome Storage API
+
+Background Service Worker
+
+Content Scripts
+
+###🧠 How It Works
+Background Service Worker
+
+Listens for context menu clicks
+
+Sends selected text to backend API
+
+Routes responses to content script
+
+Content Script
+
+Receives API response
+
+Displays summary or paraphrased content
+
+Handles UI rendering
+
+Popup (Optional UI)
+
+Can display saved history
+
+Can manage authentication state
+
+###🧪 Debugging
+
+To inspect the background service worker:
+
+Go to chrome://extensions
+
+Find LexiAI
+
+Click Inspect Service Worker
+
+If API requests fail:
+
+Verify VITE_API_URL is correct
+
+Ensure backend has CORS enabled
+
+Confirm extension was rebuilt after env changes
+
+
+🚀 Future Improvements
+
+User authentication dashboard
+
+Cloud-synced saved history
+
+Export results to Markdown or PDF
+
+Dark mode UI
+
+Usage analytics
+
