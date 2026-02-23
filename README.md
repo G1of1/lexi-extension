@@ -2,6 +2,8 @@
 
 ## LexiAI is an AI-powered Chrome extension that instantly summarizes and paraphrases selected text directly within your browser. Simply highlight text, right-click, and choose how you want LexiAI to transform it.
 
+## Summarization Service Repo: https://github.com/G1of1/lexi-summarization-service
+## Paraphrasing Service Repo: https://github.com/G1of1/lexi-paraphrasing-service
 ## 🚀 Features
 ### 📚 Smart Summarization
 
