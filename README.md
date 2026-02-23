@@ -1,9 +1,9 @@
-#LexiAI Chrome Extension ✨
+# LexiAI Chrome Extension ✨
 
-##LexiAI is an AI-powered Chrome extension that instantly summarizes and paraphrases selected text directly within your browser. Simply highlight text, right-click, and choose how you want LexiAI to transform it.
+## LexiAI is an AI-powered Chrome extension that instantly summarizes and paraphrases selected text directly within your browser. Simply highlight text, right-click, and choose how you want LexiAI to transform it.
 
-##🚀 Features
-###📚 Smart Summarization
+## 🚀 Features
+### 📚 Smart Summarization
 
 Detailed Summary
 
@@ -15,7 +15,7 @@ Study Notes
 
 Simplified Explanation
 
-###✍️ Intelligent Paraphrasing
+### ✍️ Intelligent Paraphrasing
 
 Standard
 
@@ -27,15 +27,15 @@ Academic
 
 Formal
 
-###💾 Local Save Support
+### 💾 Local Save Support
 
 Users can save generated summaries and paraphrases locally using Chrome’s Storage API.
 
-###⚡ Context Menu Integration
+### ⚡ Context Menu Integration
 
 Select any text on a webpage → Right-click → Choose a LexiAI action → View results instantly.
 
-###🏗 Architecture Overview
+### 🏗 Architecture Overview
 
 This extension communicates with a deployed backend via an API Gateway.
 
@@ -50,7 +50,7 @@ API Gateway
 Summarization / Paraphrasing Service
         ↓
 Response displayed via Content Script
-###🛠 Tech Stack
+### 🛠 Tech Stack
 
 TypeScript
 
@@ -64,7 +64,7 @@ Background Service Worker
 
 Content Scripts
 
-###🧠 How It Works
+### 🧠 How It Works
 Background Service Worker
 
 Listens for context menu clicks
@@ -87,7 +87,7 @@ Can display saved history
 
 Can manage authentication state
 
-###🧪 Debugging
+### 🧪 Debugging
 
 To inspect the background service worker:
 
@@ -106,7 +106,7 @@ Ensure backend has CORS enabled
 Confirm extension was rebuilt after env changes
 
 
-🚀 Future Improvements
+### 🚀 Future Improvements
 
 User authentication dashboard
 
